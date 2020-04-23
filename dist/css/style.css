@@ -1,0 +1,111 @@
+html,
+body {
+  margin: auto;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.todo {
+  margin: 5em;
+  width: 29%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 0.3em rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.todo__header {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+.todo__header__title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #666afb;
+  font-weight: 600;
+}
+
+.todo__header__title > span {
+  font-weight: 100;
+}
+
+.todo__header__subtitle {
+  font-size: x-large;
+  color: #b5b6c7;
+}
+
+.todo__header__total-task {
+  position: absolute;
+  z-index: 1;
+  right: 1.5em;
+  color: #b5b6c7;
+  margin-top: -39px;
+}
+
+.btn__fab {
+  padding: 0.5em;
+  width: 11%;
+  border: none;
+  background-color: #fa696a;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  z-index: 1;
+  margin-top: -39px;
+}
+
+.btn__fab:hover {
+  background-color: #f98b8c;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn__fab:not(:hover) {
+  transition: 0.2s;
+}
+
+.btn__fab__right {
+  position: absolute;
+  right: 1.5em;
+}
+
+.todo__body {
+  margin-top: 1em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+.todo__list {
+  list-style-type: none;
+  padding: 0em;
+}
+
+.todo__list__item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.todo__list__item__checkbox {
+  margin-right: 1.4em;
+}
+
+.todo__list__item__text {
+  color: #82829c;
+  font-size: large;
+}
+
+.todo__list__item__schadule {
+  color: #c3c4d6;
+  position: absolute;
+  right: 1.5em;
+  font-size: smaller;
+}

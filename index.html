@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="M. Akbar Nugroho" />
+    <meta name="description" content="a simple todo app with vanilla js" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>JS Todo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="todo">
+        <div class="todo__header">
+          <h1 class="todo__header__title">Saturday, <span>24th</span></h1>
+          <span class="todo__header__subtitle">April</span>
+          <span class="todo__header__total-task"><strong>5</strong> tasks</span>
+        </div>
+        <button class="btn__fab btn__fab__right">+</button>
+        <div class="todo__body">
+          <ol class="todo__list">
+            <li class="todo__list__item">
+              <input class="todo__list__item__checkbox" type="checkbox" />
+              <span class="todo__list__item__text"
+                ><strike>Fix issue #99091</strike></span
+              >
+              <time class="todo__list__item__schadule">09:00 AM</time>
+            </li>
+            <li class="todo__list__item">
+              <input class="todo__list__item__checkbox" type="checkbox" />
+              <span class="todo__list__item__text">Write documentation</span>
+              <time class="todo__list__item__schadule">10:00 AM</time>
+            </li>
+            <li class="todo__list__item">
+              <input class="todo__list__item__checkbox" type="checkbox" />
+              <span class="todo__list__item__text"
+                ><strike>Create fake API mockup</strike></span
+              >
+              <time class="todo__list__item__schadule">11:00 AM</time>
+            </li>
+            <li class="todo__list__item">
+              <input class="todo__list__item__checkbox" type="checkbox" />
+              <span class="todo__list__item__text">Free launch :)</span>
+              <time class="todo__list__item__schadule">12:00 AM</time>
+            </li>
+            <li class="todo__list__item">
+              <input class="todo__list__item__checkbox" type="checkbox" />
+              <span class="todo__list__item__text">Integration test</span>
+              <time class="todo__list__item__schadule">13:00 PM</time>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
